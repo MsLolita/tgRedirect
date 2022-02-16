@@ -3,7 +3,7 @@ import datetime, time
 import tgcrypto
 from pyrogram import Client, filters
 
-chatIdDonor = -1001676314426
+chatIdDonor = [-1001669121688, -1001656259847]
 to = -1001547629672
 
 PHONE_NUMBER = "+6281338436161"
