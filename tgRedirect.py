@@ -1,4 +1,4 @@
-import datetime
+import datetime, time
 
 import tgcrypto
 from pyrogram import Client, filters
@@ -12,6 +12,7 @@ app = Client("privateRedirect", phone_number = PHONE_NUMBER)
 
 @app.on_message(filters.chat(chatIdDonor))
 def takeSignal(client, message):
+    time.sleep(59)
     postText = message["text"]
     a = message.copy(to)
     print(a["text"])
