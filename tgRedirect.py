@@ -14,7 +14,7 @@ PHONE_NUMBER = "+6281338436161"
 
 app = Client("privateRedirect", phone_number = PHONE_NUMBER)
 
-@app.on_message(filters.chat(privateTrash, privateCryptoHan))
+@app.on_message(filters.chat([privateTrash, privateCryptoHan]))
 def sendPrivateBoys(client, message):
     time.sleep(59)
     postText = message["text"]
