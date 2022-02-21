@@ -15,13 +15,13 @@ PHONE_NUMBER = "+6281338436161"
 app = Client("privateRedirect", phone_number = PHONE_NUMBER)
 
 @app.on_message(filters.chat(privateTrash, privateCryptoHan))
-def takeSignal(client, message):
+def sendPrivateBoys(client, message):
     time.sleep(59)
     postText = message["text"]
     message.copy(privateBoys)
     
 @app.on_message(filters.chat(floodCryptohan))
-def takeSignal(client, message):
+def sendSolyanka(client, message):
     time.sleep(59)
     postText = message["text"]
     message.copy(solyanka)
